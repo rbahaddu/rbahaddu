@@ -63,18 +63,3 @@ The following is the requirement specification that was used in building the pas
 ● No additional password requests should be allowed when shutdown is pending.
 
 
-
-
-
-  ● Post to the /hash endpoint 
-$ curl -X POST -H "application/json" -d '{"password":"angrymonkey"}' http://127.0.0.1:8088/hash 
-
-
-● Get the base64 encoded password 
-$ curl -H "application/json" http://127.0.0.1:8088/hash/1
-
-● Get the stats 
-$ curl http://127.0.0.1:8088/stats 
-
-● Shutdown 
-$ curl -X POST -d 'shutdown' http://127.0.0.1:8088/hash 
